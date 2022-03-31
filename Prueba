@@ -1,0 +1,9 @@
+*** INICIO DEL ARCHIVO ***
+url = 'https://blog.artegrafico.net' #'https://www.google.com'
+r = requests.get(url, stream=True)  ## estado de conexion
+print(r)
+print(r.status_code) ##estado
+print(r.content[:60]) # visualiza elcodigo de la pagina web
+print(r.encoding) # para poder ver el codigo
+print(r.text)
+*** FIN DEL ARCHIVO ***
